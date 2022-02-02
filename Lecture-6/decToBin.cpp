@@ -11,6 +11,7 @@ int decToBin(int num){
         bit=num&1;
         ans=(bit*pow(10,i))+ans;
         num=num>>1;
+        i++;
     }
     return ans;
 
@@ -21,7 +22,6 @@ int main()
    int num;
    cout<<"Enter a Number: ";
    cin>>num;
-   num=num*(-1);
    cout<<"Answer: "<<decToBin(num);
    return 0;
 }
