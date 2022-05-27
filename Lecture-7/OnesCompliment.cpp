@@ -27,3 +27,31 @@ int main()
    cout<<"Answer: "<<bitwiseComplement(num);
    return 0;
 }
+
+
+
+//  different appraoch
+
+
+// class Solution {
+// public:
+//     int bitwiseComplement(int n) {
+//         int mask=0,i=0,ans=0;
+        
+//         if(n==0){
+//             return 1;
+//         }
+        
+//         int temp=~n; 
+        
+//         while(n){
+//             mask=(mask<<1) | 1;
+//             n=n>>1;
+//         }
+        
+        
+//         ans=mask&temp;
+       
+//         return ans;
+//     }
+// };
